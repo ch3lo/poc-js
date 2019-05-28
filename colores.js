@@ -27,6 +27,6 @@ app.use(function (req, res, next) {
     res.status(404).send('URL no encontrada');
 });
 
-app.listen(3000, () => {
-    console.log("El servidor está inicializado");
+app.listen(process.env.PORT, () => {
+    console.log("El servidor está inicializado " + process.env.PORT);
 });
